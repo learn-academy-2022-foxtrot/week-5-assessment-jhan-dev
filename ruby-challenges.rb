@@ -65,7 +65,7 @@ class Bike
     end
     
 
-    
+
     #   PROBLEM #3b
     
     # -------------------3b) Add the ability to pedal faster and brake. The pedal_faster method should increase the speed by a given amount. The brake method should decrease the speed by a given amount. The bike cannot go negative speeds.
@@ -79,7 +79,7 @@ class Bike
     def brake(num)
         #If the current speed - num is a negative integer --> make the current speed to have value of 0
         if (@current_speed - num).negative?
-            current_speed = 0
+            @current_speed = 0
         #Else the current speed will = the current speed minus the num param
         else
             @current_speed = @current_speed - num
