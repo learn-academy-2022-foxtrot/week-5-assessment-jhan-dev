@@ -208,6 +208,11 @@ const fullHouseCheck = (hand) => {
         //Create currentCard varaible --> represents current value iteration
         let currentCard = hand[i]
 
+        //If the hand of cards is not 5 cards --> Return false (Not a full house)
+        if (hand.length !== 5) {
+            return false
+        }
+
         //If the object is undefined --> aka empty {}
         if (uniqueCards[currentCard] === undefined) {
             //  Insert currentCard into the object {} w/ a count of 1
